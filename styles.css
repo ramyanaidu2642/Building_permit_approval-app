@@ -1,0 +1,195 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+select {
+  height: 46px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.formField label {
+  display: inline-block;
+  width: 220px;
+}
+
+.formField {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+  
+  .formField label {
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Application Undertaking */
+#agreementCheckbox {
+  margin-top: 5px;
+}
+
+/* Documents */
+#buildingPlan,
+#structuralDesign,
+#electricLayout {
+  display: block;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+/* Technical Data */
+#buildingDimensions,
+#parkingArea,
+#buildingHeight,
+#floorArea,
+#constructionType {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Lead Architect Details */
+#leadArchitectName,
+#membershipNumber,
+#expiryDate {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Building Details */
+#plotNo,
+#buildingCategory,
+#buildingDetails,
+#numFloors,
+#electionWardNo,
+#layout,
+#circleDivisionName,
+#blockNo,
+#zoneNo {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Personal Details */
+#fullName,
+#phoneNumber,
+#uid,
+#gender,
+#dateOfBirth,
+#address,
+#pincode,
+#email {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4CAF50; /* Custom background for checked state */
+  border-color: #4CAF50;
+}
